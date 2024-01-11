@@ -181,11 +181,8 @@ require('lazy').setup({
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
   },
-  {
-    "folke/trouble.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {},
-  },
+
+
 
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
@@ -458,10 +455,6 @@ local on_attach = function(_, bufnr)
     vim.lsp.buf.format()
   end, { desc = 'Format current buffer with LSP' })
 end
-
-require("trouble").setup({
-  vim.keymap.set("n", "<leader>tt", function() require("trouble").toggle() end, {desc = "[T]rouble [T]oggle"})
-})
 
 -- mason-lspconfig requires that these setup functions are called in this order
 -- before setting up the servers.
