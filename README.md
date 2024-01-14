@@ -4,7 +4,7 @@ Requirements:
 * Make sure to review the readmes of the plugins if you are experiencing errors. In particular:
   * [ripgrep](https://github.com/BurntSushi/ripgrep#installation) is required for multiple [telescope](https://github.com/nvim-telescope/telescope.nvim#suggested-dependencies) pickers.
 * See [Windows Installation](#Windows-Installation) if you have trouble with `telescope-fzf-native`
-* `sudo apt install libstdc++-12-dev` - for clangd
+* `sudo apt install libstdc++-12-dev python3-venv xclip` 
 
 
 ### Configuration And Extension

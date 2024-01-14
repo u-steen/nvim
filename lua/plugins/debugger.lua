@@ -54,53 +54,53 @@ return {
             end
 
 
-    controls = {
-      element = "repl",
-      enabled = true,
-      icons = {
-        disconnect = "",
-        pause = "",
-        play = "",
-        run_last = "",
-        step_back = "",
-        step_into = "",
-        step_out = "",
-        step_over = "",
-        terminate = ""
-      }
-    },
-    layouts = { {
-        elements = { {
-            id = "scopes",
-            size = 0.25
-          }, {
-            id = "breakpoints",
-            size = 0.25
-          }, {
-            id = "watches",
-            size = 0.50
-          } },
-        position = "left",
-        size = 40
-      }, {
-        elements = { {
-            id = "repl",
-            size = 0.5
-          }, {
-            id = "console",
-            size = 0.5
-          } },
-        position = "bottom",
-        size = 10
-      } },
-    mappings = {
-      edit = "e",
-      expand = { "<CR>", "<2-LeftMouse>" },
-      open = "o",
-      remove = "d",
-      repl = "r",
-      toggle = "t"
-    },
+            controls = {
+                element = "repl",
+                enabled = true,
+                icons = {
+                    disconnect = "",
+                    pause = "",
+                    play = "",
+                    run_last = "",
+                    step_back = "",
+                    step_into = "",
+                    step_out = "",
+                    step_over = "",
+                    terminate = ""
+                },
+                layouts = { {
+                    elements = { {
+                        id = "scopes",
+                        size = 0.25
+                    }, {
+                        id = "breakpoints",
+                        size = 0.25
+                    }, {
+                        id = "watches",
+                        size = 0.50
+                    } },
+                    position = "left",
+                    size = 40
+                }, {
+                    elements = { {
+                        id = "repl",
+                        size = 0.5
+                    }, {
+                        id = "console",
+                        size = 0.5
+                    } },
+                    position = "bottom",
+                    size = 10
+                } },
+                mappings = {
+                    edit = "e",
+                    expand = { "<CR>", "<2-LeftMouse>" },
+                    open = "o",
+                    remove = "d",
+                    repl = "r",
+                    toggle = "t"
+                },
+            }
 
 
             -- Keybindings
