@@ -55,6 +55,11 @@ vim.keymap.set("n", "<leader>Y", '"+Y')
 vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+-- Open Tmux Sessionizer
+vim.keymap.set("n", "<leader>ts", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { desc = "[T]mux [S]essionizer" })
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, {desc="[F]ormat"})
+
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
